@@ -18,3 +18,6 @@ jobs:
    # Step C: The Ultimate Test - Does our Dockerfile actually compile?
    - name: Test Docker Build
      run: docker build -t test-api-image .
+   # Step D: Running test
+   - name: Run Unit Tests
+     run: npm test
